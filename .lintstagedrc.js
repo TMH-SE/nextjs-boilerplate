@@ -6,5 +6,6 @@ const buildEslintCommand = (filenames) =>
 		.join(' --file ')}`
 
 module.exports = {
-	'*.{js,jsx,ts,tsx}': ['yarn format', buildEslintCommand],
+	'*.{js,jsx,ts,tsx}': [buildEslintCommand],
+	'*.{css,scss,sass}': ['stylelint **/*.{css,scss,sass} -i .gitignore --fix'],
 }
