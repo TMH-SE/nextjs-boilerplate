@@ -6,10 +6,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
-		"lint:style": "stylelint **/*.{css,scss,sass} -i .gitignore",
-		"format": "prettier --write . '!**/*.{css,scss,sass}' --ignore-path .gitignore",
-		"format:style": "stylelint **/*.{css,scss,sass} -i .gitignore --fix",
+		"lint": "next lint && stylelint **/*.{css,scss,sass} -i .gitignore",
+		"format": "prettier --write . '!**/*.{css,scss,sass}' --ignore-path .gitignore && stylelint **/*.{css,scss,sass} -i .gitignore --fix",
 		"prepare": "husky install"
 	},
 	"dependencies": {
