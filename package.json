@@ -8,7 +8,8 @@
 		"start": "next start",
 		"lint": "next lint",
 		"lint:style": "stylelint **/*.{css,scss,sass} -i .gitignore",
-		"format": "prettier --write . --ignore-path .gitignore",
+		"format": "prettier --write . '!**/*.{css,scss,sass}' --ignore-path .gitignore",
+		"format:style": "stylelint **/*.{css,scss,sass} -i .gitignore --fix",
 		"prepare": "husky install"
 	},
 	"dependencies": {
