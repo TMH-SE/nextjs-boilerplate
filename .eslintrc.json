@@ -6,9 +6,6 @@
 		"plugin:@typescript-eslint/recommended",
 		"plugin:prettier/recommended"
 	],
-	"parserOptions": {
-		"project": "./tsconfig.json"
-	},
 	"rules": {
 		// Override eslint-plugin-react
 		"react/jsx-uses-react": "off",
