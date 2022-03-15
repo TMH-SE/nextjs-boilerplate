@@ -22,9 +22,6 @@
 				"namedComponents": ["function-declaration", "arrow-function"],
 				"unnamedComponents": ["function-expression", "arrow-function"]
 			}
-		],
-
-		// Override typescript-lint
-		"@typescript-eslint/no-unused-vars": ["error"]
+		]
 	}
 }
